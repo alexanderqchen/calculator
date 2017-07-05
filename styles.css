@@ -1,0 +1,38 @@
+#screen{
+	width: 95%;
+	height: 100px;
+	margin: auto;
+	background: black;
+}
+
+#calculator{
+	width: 50%;
+	margin: auto;
+	overflow: hidden;
+	text-align: center;
+	background: lightgrey;
+}
+#numbers{
+	width: 80%;
+	float: left;
+}
+#operations{
+	width: 20%;
+	float: right;
+}
+.number{
+	width: 20%;
+	height: 100px;
+	margin: 10px;
+	font-size: 200%
+}
+.operation{
+	width: 60%;
+	height: 75px;
+	margin: 10px;
+	font-size: 200%;
+	background: grey;
+}
+#equals{
+	background: orange;
+}
