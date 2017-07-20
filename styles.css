@@ -4,7 +4,16 @@
 	margin: auto;
 	background: black;
 }
-
+#display{
+	margin: 10px;
+	color: white;
+	line-height: 100px;
+	vertical-align: middle;
+	font-size: 50px;
+	text-align: left;
+	letter-spacing: 5px;
+	font-family: monospace;
+}
 #calculator{
 	width: 50%;
 	margin: auto;
