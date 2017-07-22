@@ -1,50 +1,47 @@
 #calculator{
-	width: 50%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	margin: auto;
-	overflow: hidden;
+	width: 60vw;
+	height: 90vh;
 	text-align: center;
 	background: lightgrey;
 }
 #screen{
 	width: 95%;
-	height: 15vh;
-	margin: auto;
-	margin-top: 20px;
+	height: 15%;
+	margin: 3%;
+	margin-bottom: 0;
 	background: black;
 }
 #display{
-	margin: 0 20px;
+	margin: 0 2%;
 	color: white;
-	line-height: 15vh;
+	line-height: 13.5vh;
 	vertical-align: middle;
-	font-size: 50px;
+	font-size: 12vh;
 	text-align: left;
-	letter-spacing: 5px;
+	letter-spacing: 0.5vw;
 	font-family: monospace;
 }
-#buttons{
-	width: 100%;
-}
-#numbers{
-
-}
-
-.number{
+button{
 	width: 7vw;
 	height: 14vh;
-	font-size: 200% !important;
-	margin: 10px;
+	font-size: 2.5vw !important;
+	line-height: 5vh;
+	margin: 2vh 1vw !important;
 }
 .operation{
-	width: 7vw;
-	height: 14vh;
-	margin: 10px;
-	font-size: 200% !important;
 	background: grey !important;
 }
 #equals{
 	background: orange !important;
+	width: 14vw;
 }
 #clear{
 	background: #00FF00 !important;
+	width: 14vw;
 }
