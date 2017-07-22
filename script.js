@@ -179,15 +179,26 @@ divide.onclick = function() {
     lastButton = "divide";
 };
 equals.onclick = function(){
-    if(lastButton != "plus" && lastButton != "minus" && lastButton != "times" && lastButton != "divide") {
+    if(lastButton == "equals") {
         if(operation == "plus") {
-            display.innerHTML =  Number(operand1) + Number(display.innerHTML);
+            display.innerHTML = Number(display.innerHTML) + Number(operand2);
         } else if(operation == "minus") {
-            display.innerHTML = Number(operand1) - Number(display.innerHTML);
+            display.innerHTML = Number(display.innerHTML) - Number(operand2);
         } else if(operation == "times") {
-            display.innerHTML = Number(operand1) * Number(display.innerHTML);
+            display.innerHTML = Number(display.innerHTML) * Number(operand2);
         } else if(operation == "divide") {
-            display.innerHTML = Number(operand1) / Number(display.innerHTML);
+            display.innerHTML = Number(display.innerHTML) / Number(operand2);
+        }
+    } else if(lastButton != "plus" && lastButton != "minus" && lastButton != "times" && lastButton != "divide") {
+        operand2 = display.innerHTML;
+        if(operation == "plus") {
+            display.innerHTML =  Number(operand1) + Number(operand2);
+        } else if(operation == "minus") {
+            display.innerHTML = Number(operand1) - Number(operand2);
+        } else if(operation == "times") {
+            display.innerHTML = Number(operand1) * Number(operand2);
+        } else if(operation == "divide") {
+            display.innerHTML = Number(operand1) / Number(operand2);
         }
         lastButton = "equals";
     }
